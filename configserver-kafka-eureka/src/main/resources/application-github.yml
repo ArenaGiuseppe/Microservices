@@ -1,0 +1,22 @@
+# ==============================================================
+# = Config Server Versione Base
+# = PROFILO GITHUB
+# ==============================================================
+
+spring:
+  config:
+    activate:
+      on-profile: github
+  application:
+    name: config-server-github
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ArenaGiuseppe/priceart-config.git
+          username: ArenaGiuseppe
+          password: ENC(UC+z1IfhlCeBiQ6GfaS8ReC48cO8DQukCvnaDG0JNO7s+gdjwln8TKU0V6Cgm4TwFKVGbP2M2Yo=) #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
+          timeout: 5 #in secondi
+          cloneOnStart: true
+          default-label: master
+          #default-label: main

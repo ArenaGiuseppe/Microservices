@@ -1,0 +1,121 @@
+# ==============================================================
+# = Promo Web Service 
+# ==============================================================
+
+server:
+  #port: 8091
+  port: 809${seq}
+
+spring:
+  cache:
+    type: redis
+  application:
+    name: PromoWebService
+#==========================================================
+#= PARAMETRI DBMS POSTGRESQL 
+#==========================================================
+  sql:
+    init:
+      mode: always
+      platform: postgres
+  datasource:
+    password: 123_Stella
+    url: jdbc:postgresql://localhost:5433/Alphashop
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+# ==============================================================
+# = Redis Parameters
+# ==============================================================
+  redis:
+    connect-timeout: 2s
+    host: localhost
+    #password: password
+    port: 6379
+    timeout: 1s
+# ==============================================================
+# = ZipKin parameters
+# ==============================================================
+  zipkin:
+    baseUrl: http://localhost:9411/
+    sender:
+      type: web
+     #type: rabbit  
+    message-timeout: 5
+# ==============================================================
+# = Sleuth parameters
+# ==============================================================
+  sleuth:
+    sampler:
+      probability: 1.0
+    traceId128: false
+# ==============================================================
+# = Actuator Parameters
+# ==============================================================
+management:
+  info:
+    env:
+      enabled: true
+    git:
+      enabled: true
+      mode: full
+  endpoint:
+    health:
+      show-details: WHEN_AUTHORIZED
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,customInfo
+# ==============================================================
+# = Parametri OpenFeign
+# ============================================================== 
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types:
+      - text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+  client:
+    config:
+      PriceArtService:
+        connect-timeout: 20000
+        read-timeout: 20000
+      default:
+        connect-timeout: 20000
+        read-timeout: 20000
+        
+# ==============================================================
+# = Eureka Properties  
+# = Nota: prima di attivare il servizio servono tre heartbeat
+# ==============================================================
+eureka:
+# ==============================================================
+# = Impostazioni Instance
+# ============================================================== 
+  instance:
+    #intervallo di attesa prima della rimozione del servizio (def 90 sec)
+    lease-expiration-duration-in-seconds: 60
+    #intervallo di invio dell'heartbeat (def 30 sec)
+    leaseRenewalIntervalInSeconds: 15
+    #id di identificazione dell'istanza
+    instanceId: ${server.port}-${spring.application.name}-${seq}
+    #registrazione per indirizzo ip (defualt hostname)
+    preferIpAddress: true
+# ==============================================================
+# = Impostazioni Client
+# ============================================================== 
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+     defaultZone: ${EUREKA_URL:http://user:BimBumBam_2018@localhost:8761/eureka/}
+    #time out di connessione in secondi al server Eureka (def 5 sec) 
+    eureka-server-connect-timeout-seconds: 8

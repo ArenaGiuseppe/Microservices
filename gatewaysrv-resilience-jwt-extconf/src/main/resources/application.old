@@ -1,0 +1,149 @@
+# ==============================================================
+# = SPRING API GATEWAY CON resilience4j
+# = AUTENTICAZIONE CENTEALIZZATA JWT
+# ==============================================================
+
+
+server:
+  port: 8765
+  netty:
+    connection-timeout: 2s
+    idle-timeout: 15s
+  shutdown: graceful
+
+spring:
+   application:
+    name: SpringApiGateway
+   lifecycle:
+    timeout-per-shutdown-phase: 15s
+   cloud:
+    gateway:
+      httpclient:
+        #Timeout di connessione in ms
+        connect-timeout: 2000 #2s
+        #Timeout di risposta in s
+        response-timeout: 30s
+        pool:
+          type: elastic
+          max-idle-time: 15s
+          max-life-time: 60s
+      default-filters:
+      - name: RequestRateLimiter
+        args:
+          #Numero di token inseriti nel bucket al secondo
+          redis-rate-limiter.replenishRate: 5
+          #Picco di token inseriti nel bucket in un secondo
+          redis-rate-limiter.burstCapacity: 10
+          #Numero di token per ciascuna chiamata
+          redis-rate-limiter.requestedTokens: 1
+          #key-resolver: '#{@userKeyResolver}'
+      - name: Retry
+        args:
+         retries: 3
+         methods: GET
+         series: SERVER_ERROR
+         exceptions: java.io.IOException, java.util.concurrent.TimeoutException
+         backoff:
+          firstBackoff: 50ms
+          maxBackOff: 500ms
+          factor: 2
+          basedOnPreviousValue: false
+# ==============================================================
+# = Redis Parameters
+# ==============================================================
+   redis:
+    connect-timeout: 2s
+    host: localhost
+    port: 6379
+    timeout: 1s
+# ==============================================================
+# = ZipKin parameters
+# ==============================================================
+   zipkin:
+    baseUrl: http://localhost:9411/
+    sender:
+      type: web
+     #type: rabbit  
+    message-timeout: 5
+# ==============================================================
+# = Sleuth parameters
+# ==============================================================
+   sleuth:
+    sampler:
+      probability: 1.0
+    traceId128: false
+
+# ==============================================================
+# = Resilience4j Parameters
+# ==============================================================          
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        sliding-window-type: TIME_BASED
+        #soglia in percentuali di fallimenti che che determina l'apertura del circuito
+        failureRateThreshold: 25
+        #numero di chiamate di riferimento
+        slidingWindowSize: 3
+        #tempo di durata dello stato di circuito aperto
+        wait-duration-in-open-state: 20000
+        #numero di chiamate in stato half open
+        permittedNumberOfCallsInHalfOpenState: 5
+        #Se impiega più di un secondo viene conteggiato come lento
+        slow-call-duration-threshold: 1000
+        slow-call-rate-threshold: 50.00
+        
+  timelimiter:
+    configs:
+      default:
+        timeoutDuration: 15s
+        
+       
+           
+# ==============================================================
+# = Eureka Properties  
+# = Nota: prima di attivare il servizio servono tre heartbeat
+# ==============================================================
+eureka:
+# ==============================================================
+# = Impostazioni Instance
+# ============================================================== 
+  instance:
+    #intervallo di attesa prima della rimozione del servizio (def 90 sec)
+    lease-expiration-duration-in-seconds: 60
+    #intervallo di invio dell'heartbeat (def 30 sec)
+    leaseRenewalIntervalInSeconds: 15
+    #id di identificazione dell'istanza
+    instanceId: ${server.port}-${spring.application.name}
+    #registrazione per indirizzo ip (defualt hostname)
+    preferIpAddress: true
+# ==============================================================
+# = Impostazioni Client
+# ============================================================== 
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+     defaultZone: ${EUREKA_URL:http://user:BimBumBam_2018@localhost:8761/eureka/}
+    #time out di connessione in secondi al server Eureka (def 5 sec) 
+    eureka-server-connect-timeout-seconds: 8
+    
+# ==============================================================
+# = Parametri Sicurezza JWT 
+# ==============================================================
+sicurezza:
+    header: Authorization
+    secret: $123_Stella@xantrix.it
+
+#==============================================================
+# = Logs Parameters
+# ==============================================================        
+logging:
+  level:
+    io:
+      github:
+        resilience4j: DEBUG
+    org:
+      springframework:
+        cloud: DEBUG
+    #org.springframework.security: DEBUG

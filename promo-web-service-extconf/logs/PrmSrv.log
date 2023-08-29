@@ -1,0 +1,781 @@
+11-05-2022 [main] INFO  ControllerTests.PromoControllerTest - No active profile set, falling back to 1 default profile: "default"
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 307 ms. Found 2 JPA repository interfaces.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xantrix.webapp.repository.PrezziPromoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xantrix.webapp.repository.PromoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+11-05-2022 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3179dcc0-e21d-3b34-b281-b77f2b654e6c
+11-05-2022 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-05-2022 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.8.Final
+11-05-2022 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-05-2022 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-05-2022 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-05-2022 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-05-2022 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-05-2022 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-05-2022 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-05-2022 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'ArticoliWebService' URL not provided. Will try picking an instance via load-balancing.
+11-05-2022 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+11-05-2022 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+11-05-2022 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+11-05-2022 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+11-05-2022 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+11-05-2022 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+11-05-2022 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 15
+11-05-2022 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1652279961521 with initial instances count: 6
+11-05-2022 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PROMOWEBSERVICE with eureka with status UP
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1652279961538, current=UP, previous=STARTING]
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1: registering service...
+11-05-2022 [main] INFO  ControllerTests.PromoControllerTest - Started PromoControllerTest in 22.041 seconds (JVM running for 23.558)
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1 - registration status: 204
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+11-05-2022 [main] INFO  ControllerTests.PromoControllerTest - ****** Numero Promozioni Esistenti: 0 *******
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ***** Creiamo una Promo con id 658376c8-1032-4395-bd0f-0dc6b90527f5 *****
+11-05-2022 [main] INFO  ControllerTests.PromoControllerTest - ****** Numero Promozioni Esistenti: 1 *******
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo tutte le promozioni *******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Numero dei record: 1
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la promozione con Id: 658376c8-1032-4395-bd0f-0dc6b90527f5*******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la promozione con Codice: TEST01*******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ***** Creiamo una Promo con id 944a9a30-43d4-4ea4-bdea-480459e01cad *****
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la Promozione Attive*******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Eliminiamo la promo con id 658376c8-1032-4395-bd0f-0dc6b90527f5
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la promozione con Id: ABC*******
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Eliminiamo Tutte le promozioni presenti in anagrafica
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoByAnnoCodice
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CachePromoAttive
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo2
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoById
+11-05-2022 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ControllerTests.PromoValidationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@75443609, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7d12c4dd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1969a032, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@dfee4f1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@59de6f39, org.springframework.test.context.support.DirtiesContextTestExecutionListener@32016cf3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@66bd32b1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1c9e9bfb, org.springframework.test.context.event.EventPublishingTestExecutionListener@361398f6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@f4c0c33, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6b9fd1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@68c29d64, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@42bc7ca2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2dfecd52, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@71374a2b]
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - Il codice della promozione deve avere un numero di caratteri compreso fra 3 e 10
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - E' necessario inserire la descrizione della promozione
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - Il codice articolo deve avere un numero di caratteri compreso tra 5 e 20
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - E' necessario inserire l'oggetto della promozione
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - E' necessario inserire l'oggetto della promozione
+11-05-2022 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ControllerTests.PrezziPromoControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@247d6992, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2eeb14d4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@53339642, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@f94fc29, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@40ea25b0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3651c4cd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@791fc5c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@51421b7d, org.springframework.test.context.event.EventPublishingTestExecutionListener@40146340, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@78dbb023, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7fed4326, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3eb53655, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5d585ca0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7827b580, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6d462dd1]
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo Prezzo in promo articolo 049477701 
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo promo fidelity articolo 004590201 
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo promo riservata alla fidelity Optional[67000076] dell'articolo 008071001 
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo Prezzo in promo articolo 002001601 
+11-05-2022 [main] WARN  c.x.w.s.PrezzoPromoServiceImpl - Promo Articolo Assente!!
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoByAnnoCodice
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CachePromoAttive
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo2
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoById
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo Prezzo in promo articolo 049477701 
+11-05-2022 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ControllerTests.PromoControllerTestConArticolo]: no resource found for suffixes {-context.xml, Context.groovy}.
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@f895fd7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4a70aeeb, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4f6f13f0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2e9ab0b3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6b283550, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2460c928, org.springframework.test.context.transaction.TransactionalTestExecutionListener@13a7aec7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@68c39b28, org.springframework.test.context.event.EventPublishingTestExecutionListener@426ba1d5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@60600939, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4e9f4264, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3af18a44, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@258be1c6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@45c20d8f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@71faeb31]
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  C.PromoControllerTestConArticolo - ****** Numero Promozioni Esistenti: 0 *******
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ***** Creiamo una Promo con id d0b8e339-6672-4d5f-922b-3783062dff35 *****
+11-05-2022 [main] INFO  C.PromoControllerTestConArticolo - ****** Numero Promozioni Esistenti: 1 *******
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo tutte le promozioni *******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Numero dei record: 1
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la promozione con Id: d0b8e339-6672-4d5f-922b-3783062dff35*******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Eliminiamo Tutte le promozioni presenti in anagrafica
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoByAnnoCodice
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CachePromoAttive
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo2
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoById
+11-05-2022 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RepositoryTest.PromoRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@70dbde75, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@97293ef, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3b0e8bc4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@b4b22af, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@25cd6dc5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@38bd6f78, org.springframework.test.context.transaction.TransactionalTestExecutionListener@77228300, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@25ae8911, org.springframework.test.context.event.EventPublishingTestExecutionListener@6b437b24, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@38d60f9b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5b8fa102, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@ab85d63, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7ad29d4b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7270ff5d, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5451d7a0]
+11-05-2022 [Thread-4] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+11-05-2022 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PROMOWEBSERVICE with eureka with status DOWN
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1652279970354, current=DOWN, previous=UP]
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1: registering service...
+11-05-2022 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-05-2022 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-05-2022 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1 - registration status: 204
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1 - deregister  status: 200
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+11-05-2022 [main] INFO  ControllerTests.PromoControllerTest - No active profile set, falling back to 1 default profile: "default"
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 322 ms. Found 2 JPA repository interfaces.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xantrix.webapp.repository.PrezziPromoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xantrix.webapp.repository.PromoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+11-05-2022 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3179dcc0-e21d-3b34-b281-b77f2b654e6c
+11-05-2022 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-05-2022 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.8.Final
+11-05-2022 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-05-2022 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-05-2022 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-05-2022 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-05-2022 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-05-2022 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-05-2022 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-05-2022 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'ArticoliWebService' URL not provided. Will try picking an instance via load-balancing.
+11-05-2022 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+11-05-2022 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+11-05-2022 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+11-05-2022 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+11-05-2022 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+11-05-2022 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+11-05-2022 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 15
+11-05-2022 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1652280131366 with initial instances count: 6
+11-05-2022 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PROMOWEBSERVICE with eureka with status UP
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1652280131383, current=UP, previous=STARTING]
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1: registering service...
+11-05-2022 [main] INFO  ControllerTests.PromoControllerTest - Started PromoControllerTest in 21.469 seconds (JVM running for 23.073)
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1 - registration status: 204
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+11-05-2022 [main] INFO  ControllerTests.PromoControllerTest - ****** Numero Promozioni Esistenti: 0 *******
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ***** Creiamo una Promo con id 4cfbc9b9-6334-45c7-8abc-3974ccda7479 *****
+11-05-2022 [main] INFO  ControllerTests.PromoControllerTest - ****** Numero Promozioni Esistenti: 1 *******
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo tutte le promozioni *******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Numero dei record: 1
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la promozione con Id: 4cfbc9b9-6334-45c7-8abc-3974ccda7479*******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la promozione con Codice: TEST01*******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ***** Creiamo una Promo con id c3afeae5-1110-416f-8dc6-bd1f5943762a *****
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la Promozione Attive*******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Eliminiamo la promo con id 4cfbc9b9-6334-45c7-8abc-3974ccda7479
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la promozione con Id: ABC*******
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Eliminiamo Tutte le promozioni presenti in anagrafica
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoByAnnoCodice
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CachePromoAttive
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo2
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoById
+11-05-2022 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ControllerTests.PromoValidationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6a3a236f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3d07c7aa, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1130cad1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2e3f9d29, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1525f2da, org.springframework.test.context.support.DirtiesContextTestExecutionListener@161c4d43, org.springframework.test.context.transaction.TransactionalTestExecutionListener@16d7b13, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@53e968c2, org.springframework.test.context.event.EventPublishingTestExecutionListener@69e0e347, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1de2cd6d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@77bd9821, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6f8a516c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@11e7d01, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@a9c51ea, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@11fbbc08]
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - Il codice della promozione deve avere un numero di caratteri compreso fra 3 e 10
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - E' necessario inserire la descrizione della promozione
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - Il codice articolo deve avere un numero di caratteri compreso tra 5 e 20
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - E' necessario inserire l'oggetto della promozione
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - E' necessario inserire l'oggetto della promozione
+11-05-2022 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ControllerTests.PrezziPromoControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6ef0e08f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@505b5ddc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@44243d32, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6af761ba, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3ea10f3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@9d518ef, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6cfd694a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3d562fde, org.springframework.test.context.event.EventPublishingTestExecutionListener@6e68cd0f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4f5bb24d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@486b35d5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@44cfdbd9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6ce766fa, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7ebc78f1, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6fe83f6e]
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo Prezzo in promo articolo 049477701 
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo promo fidelity articolo 004590201 
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo promo riservata alla fidelity Optional[67000076] dell'articolo 008071001 
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo Prezzo in promo articolo 002001601 
+11-05-2022 [main] WARN  c.x.w.s.PrezzoPromoServiceImpl - Promo Articolo Assente!!
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoByAnnoCodice
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CachePromoAttive
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo2
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoById
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo Prezzo in promo articolo 049477701 
+11-05-2022 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ControllerTests.PromoControllerTestConArticolo]: no resource found for suffixes {-context.xml, Context.groovy}.
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2901e61e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3bdc78d8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@49b6704a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@60877252, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4610594a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e52e3e8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@641ce448, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3f520f7b, org.springframework.test.context.event.EventPublishingTestExecutionListener@7bcccbd2, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@72883ae0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@71b5be5d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5eb35ec7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@43bc8c98, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7050e135, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2c4bee34]
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  C.PromoControllerTestConArticolo - ****** Numero Promozioni Esistenti: 0 *******
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ***** Creiamo una Promo con id c592c4bc-1d14-47fc-8e0c-5f2c35be5218 *****
+11-05-2022 [main] INFO  C.PromoControllerTestConArticolo - ****** Numero Promozioni Esistenti: 1 *******
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo tutte le promozioni *******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Numero dei record: 1
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la promozione con Id: c592c4bc-1d14-47fc-8e0c-5f2c35be5218*******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Eliminiamo Tutte le promozioni presenti in anagrafica
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoByAnnoCodice
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CachePromoAttive
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo2
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoById
+11-05-2022 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RepositoryTest.PromoRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7194dae5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@82300e1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6fa9e6db, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47d41516, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1040bcfb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@74921a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@20cb33f1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@47d0ee5b, org.springframework.test.context.event.EventPublishingTestExecutionListener@5262253e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7622892a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f0f78a4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4f6dfd28, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@c656a2e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6eecd951, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1ad25670]
+11-05-2022 [Thread-4] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+11-05-2022 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PROMOWEBSERVICE with eureka with status DOWN
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1652280135797, current=DOWN, previous=UP]
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1: registering service...
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1 - registration status: 204
+11-05-2022 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-05-2022 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-05-2022 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1 - deregister  status: 200
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+11-05-2022 [main] INFO  C.PrezziPromoControllerTest - No active profile set, falling back to 1 default profile: "default"
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 269 ms. Found 2 JPA repository interfaces.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xantrix.webapp.repository.PrezziPromoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xantrix.webapp.repository.PromoRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+11-05-2022 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+11-05-2022 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3179dcc0-e21d-3b34-b281-b77f2b654e6c
+11-05-2022 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11-05-2022 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.8.Final
+11-05-2022 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11-05-2022 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11-05-2022 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11-05-2022 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+11-05-2022 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-05-2022 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11-05-2022 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11-05-2022 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'ArticoliWebService' URL not provided. Will try picking an instance via load-balancing.
+11-05-2022 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+11-05-2022 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+11-05-2022 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+11-05-2022 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+11-05-2022 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoint(s) beneath base path '/actuator'
+11-05-2022 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+11-05-2022 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 15
+11-05-2022 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1652280240155 with initial instances count: 6
+11-05-2022 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PROMOWEBSERVICE with eureka with status UP
+11-05-2022 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1652280240187, current=UP, previous=STARTING]
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1: registering service...
+11-05-2022 [main] INFO  C.PrezziPromoControllerTest - Started PrezziPromoControllerTest in 21.222 seconds (JVM running for 22.556)
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1 - registration status: 204
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo Prezzo in promo articolo 049477701 
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo promo fidelity articolo 004590201 
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo promo riservata alla fidelity Optional[67000076] dell'articolo 008071001 
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo Prezzo in promo articolo 002001601 
+11-05-2022 [main] WARN  c.x.w.s.PrezzoPromoServiceImpl - Promo Articolo Assente!!
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo2
+11-05-2022 [main] INFO  c.x.w.c.PrezzoPromoController - Cerchiamo Prezzo in promo articolo 049477701 
+11-05-2022 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ControllerTests.PromoControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@364c430a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1b28684, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@694b818f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@63cb1a9a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@37cb41fa, org.springframework.test.context.support.DirtiesContextTestExecutionListener@22587721, org.springframework.test.context.transaction.TransactionalTestExecutionListener@17aadd1c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2c0e0ab9, org.springframework.test.context.event.EventPublishingTestExecutionListener@41274a53, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@20a7dc29, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@61a4a71c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3d233253, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@462d8276, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5875480e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1cad885b]
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  ControllerTests.PromoControllerTest - ****** Numero Promozioni Esistenti: 0 *******
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ***** Creiamo una Promo con id 0070215c-0465-4f30-a0e9-c44647a32bf2 *****
+11-05-2022 [main] INFO  ControllerTests.PromoControllerTest - ****** Numero Promozioni Esistenti: 1 *******
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo tutte le promozioni *******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Numero dei record: 1
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la promozione con Id: 0070215c-0465-4f30-a0e9-c44647a32bf2*******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la promozione con Codice: TEST01*******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ***** Creiamo una Promo con id 63f7e5f7-486a-48fb-be21-ac89e56296ce *****
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la Promozione Attive*******
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 049477701
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo PANTE.SHAMPOO RICCI ML250
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 004590201
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo BARILLA NASTRINE X6 MB 240 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 008071001
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo FINDUS SOFFICINI POM/MOZZ.266 GR
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Ricerca dati articolo codice 002001601
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Trovato Articolo ACQUA FIUGGI 1 LT
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Eliminiamo la promo con id 0070215c-0465-4f30-a0e9-c44647a32bf2
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - ****** Otteniamo la promozione con Id: ABC*******
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] INFO  c.x.w.controllers.PromoController - Eliminiamo Tutte le promozioni presenti in anagrafica
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPrzPromo2
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoByAnnoCodice
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CachePromoAttive
+11-05-2022 [main] INFO  c.x.webapp.services.PromoServiceImpl - Eliminazione cache CacheSelPromoById
+11-05-2022 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ControllerTests.PromoValidationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@10353925, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@164c06a4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3f78b3b2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@34ab039a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@d6ee83b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b61b614, org.springframework.test.context.transaction.TransactionalTestExecutionListener@17e7fe9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6da50b8f, org.springframework.test.context.event.EventPublishingTestExecutionListener@17f00930, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6157dccc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13a47638, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5698eeb0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4136d4da, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1ed8d18c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2e7d71d9]
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - Il codice della promozione deve avere un numero di caratteri compreso fra 3 e 10
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - E' necessario inserire la descrizione della promozione
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - Il codice articolo deve avere un numero di caratteri compreso tra 5 e 20
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - E' necessario inserire l'oggetto della promozione
+11-05-2022 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+11-05-2022 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+11-05-2022 [main] WARN  c.x.w.controllers.PromoController - E' necessario inserire l'oggetto della promozione
+11-05-2022 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [RepositoryTest.PromoRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11-05-2022 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@83ffa7b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@37eb8009, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@40b63796, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@15fb5531, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@62e099d7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@960a64a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@789b3a77, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3706ba88, org.springframework.test.context.event.EventPublishingTestExecutionListener@51cea39e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5d100d1b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7cf9dc4c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7ea9fba1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5a5f65b9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@77ad33c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@35d36423]
+11-05-2022 [Thread-4] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+11-05-2022 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PROMOWEBSERVICE with eureka with status DOWN
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1652280243543, current=DOWN, previous=UP]
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1: registering service...
+11-05-2022 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1 - registration status: 204
+11-05-2022 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11-05-2022 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11-05-2022 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PROMOWEBSERVICE/8091-PromoWebService-1 - deregister  status: 200
+11-05-2022 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
